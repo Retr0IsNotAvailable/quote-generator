@@ -1,0 +1,58 @@
+.quote-box {
+  background: #fff;
+  width: 90%;
+  width: 44rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.5rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  box-shadow: 0 0.6rem 1.25rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.quote-box h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.quote-box h2::after {
+  content: '';
+  width: 4.7rem;
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -0.62rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+  font-size: 1.62rem;
+  min-height: 6.87rem;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+  content: '"';
+}
+
+.quote-box span {
+  display: block;
+  margin-top: 0.62rem;
+  float: right;
+  position: relative;
+}
+
+.quote-box span::before {
+  content: '';
+  width: 1.25rem;
+  height: 0.15rem;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  top: 50%;
+  left: -45%;
+}
